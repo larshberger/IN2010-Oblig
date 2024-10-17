@@ -1,0 +1,11 @@
+Oppgave 1 - Binærsøk med lenkede lister
+Valg av datastrukturen lenkeliste vil påvirke kjøretidskompleksiteten.
+ 
+I datastrukturen lenkeliste slår vi opp elementer ved å traversere gjennom listen. Vi kan ikke direkte hoppe til en indeks som i et vanlig array. 
+Oppslag av element i lenkeliste har derfor verste kjøretid på O(n).
+
+Binærsøk går ut på at vi finner midtpunktet i listen og så sjekker om det vi leter etter er større eller mindre et midtpunkt. Det betyr at vi må iterere halvparten av listen før vi i det hele tatt kan begynne binærsøket. For hver deling av listen må midtpunktet finnes på nytt. 
+Binærsøk har av den grunn verste kjøretid på O(log(n)).
+
+Ettersom binærsøk med lenkeliste først må slå opp midtpunktet på O(n), og så utføre binærsøk på O(log(n)), vil kjøretidskompleksiteten for binærsøk med lenkeliste bli O(n log(n)).
+
