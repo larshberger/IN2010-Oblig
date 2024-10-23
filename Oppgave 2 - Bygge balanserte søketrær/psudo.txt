@@ -1,2 +1,23 @@
 
+Funksjon print_array(array, start, slutt):
+    if start > slutt:
+        return tom liste
+
+    mid <- (start + slutt) // 2
+    current <- liste inneholder arr[mid]
+
+    venstre <- print_array(arr, start, mid - 1)
+    høyre <- print_array(arr, mid + 1, slutt)
+
+    return current + venstre + høyre
+
+funksjon main():
+    input
+    input_nummer <- leser input
+
+    balansert <- print_array(input_nummer, 0, len(input_nummer) - 1)
+
+    for nummer in print_array:
+    print nummer
+
 
