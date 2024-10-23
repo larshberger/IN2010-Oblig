@@ -1,0 +1,24 @@
+
+Funksjon prioritets_kø(pk):
+    kø = []
+
+    heappush(kø, (0, len(pk) - 1))
+
+    while kø:
+        start, slutt = heappop(kø)
+
+        if start > slutt:
+            continue
+
+        mid = (start + slutt) // 2
+
+        print(pk[mid])
+
+        heappush(kø, (start, mid - 1))
+        heappush(kø, (mid + 1, slutt))
+        
+Funksjon main():  
+    pk <- linjer : fil
+    
+    heapify(pk)
+    prioritets_kø(pk)
