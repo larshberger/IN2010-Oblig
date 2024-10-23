@@ -1,0 +1,4 @@
+Oppgave 2 kan kjøres gjennom disse kommando linjene:
+
+Get-Content "input_filnavn" | python oppgave_2a.py
+Get-Content "input_filnavn" | python oppgave_2b.py
